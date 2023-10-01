@@ -1,0 +1,13 @@
+#vid1{
+    display: block;
+    margin: auto;
+}
+
+#judul{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tulisan{   
+    text-align: center;
+}
