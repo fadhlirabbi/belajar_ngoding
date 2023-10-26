@@ -18,7 +18,7 @@ func main() {
 	// rumus luas persegi panjang --> l = p x l
 
 	var panjangPP, lebarPP float64
-	var luasPP float64w
+	var luasPP float64
 
 	fmt.Println("\nNO 1, MENGHITUNG LUAS PERSEGI PANJANG")
 
