@@ -1,4 +1,5 @@
 #include <iostream> //header file 
+#include <cstdio>
 
 // global scope
 
@@ -31,4 +32,6 @@ main(){
     foo1();
     localvar = foo2();
     cout<<localvar;
+
+    std::getchar();
 }
