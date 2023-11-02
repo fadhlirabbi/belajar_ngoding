@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func no1() {
-	var bil, i uint64
+	var bil, i uint
 	var kata string
 
 	fmt.Print("\nNO 1, MENCETAK KATA SEBANYAK N KALI\n")
@@ -14,10 +14,9 @@ func no1() {
 	fmt.Print("masukkan kata yang ingin di ulang : ")
 	fmt.Scan(&kata)
 
-	fmt.Println("")
-
-	if bil <= 0 {
-		fmt.Println("masukkan angka lebih dari 0 agar dapat menampilkan kata")
+	if bil < 0 {
+		fmt.Println("\nmasukkan angka lebih dari 0 agar dapat menampilkan kata")
+		return
 	}
 
 	for i = 1; i <= bil; i++ {

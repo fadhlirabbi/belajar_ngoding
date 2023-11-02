@@ -11,13 +11,16 @@ func no3() {
 
 	fmt.Print("\nBanyaknya hari mahasiswa berlatih: ")
 	fmt.Scan(&w)
-	fmt.Print("")
 
 	for i := 0; i < w; i++ {
+
 		var jamPerHari int
+
 		fmt.Printf("Hari %d: ", i+1)
 		fmt.Scan(&jamPerHari)
 		totalJam += jamPerHari
+
+		// totalJam = totalJam + jamPerHari
 	}
 
 	rataRata := float64(totalJam) / float64(w)
