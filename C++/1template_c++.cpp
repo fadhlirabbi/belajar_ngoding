@@ -3,7 +3,6 @@
 
 // global scope
 
-
 using namespace std; //namespace
 
 int globalvar = 7; 
