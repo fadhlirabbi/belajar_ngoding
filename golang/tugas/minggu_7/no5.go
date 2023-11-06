@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var n int
+	var n int64
 	fmt.Print("Masukkan nilai N (N > 1): ")
 	fmt.Scan(&n)
 

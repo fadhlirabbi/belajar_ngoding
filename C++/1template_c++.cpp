@@ -1,7 +1,7 @@
 #include <iostream> //header file 
+#include <cstdio>
 
 // global scope
-
 
 using namespace std; //namespace
 
@@ -31,4 +31,6 @@ main(){
     foo1();
     localvar = foo2();
     cout<<localvar;
+
+    std::getchar();
 }
