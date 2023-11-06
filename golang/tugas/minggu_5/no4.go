@@ -16,6 +16,7 @@ func no4() {
 	fmt.Print("\nNO 4, MENGHITUNG FAKTORIAL DARI INPUT N\n")
 
 	var g int
+
 	fmt.Print("\nMasukkan bilangan bulat positif n: ")
 	fmt.Scan(&g)
 

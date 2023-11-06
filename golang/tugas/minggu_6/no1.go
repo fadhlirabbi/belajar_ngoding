@@ -1,34 +1,38 @@
 package main
 
-import (
-	"fmt"
-)
-
-func no1() {
-	correctUsername := "admin"
-	correctPassword := "admin"
-
-	var inputUsername, inputPassword string
-
-	fmt.Print("Masukkan username: ")
-	fmt.Scan(&inputUsername)
-
-	for inputUsername != correctUsername {
-		fmt.Print("Masukkan username: ")
-		fmt.Scan(&inputUsername)
-	}
-
-	for {
-		fmt.Print("Masukkan password: ")
-		fmt.Scan(&inputPassword)
-
-		if inputPassword == correctPassword {
-			fmt.Println("Login berhasil!")
-			break
-		}
-	}
-}
+import "fmt"
 
 func main() {
-	no1()
+	fmt.Println("Program Penghitung Gagal Login")
+
+	// Inisialisasi variabel untuk menghitung jumlah percobaan gagal
+	var gagalLogin int
+
+	// Username dan password yang benar
+	usernameBenar := "admin"
+	passwordBenar := "admin"
+
+	for {
+		var username string
+		fmt.Print("username: ")
+		fmt.Scan(&username)
+
+		if username == usernameBenar {
+			// Jika username benar, lanjutkan ke tahap tebakan password
+			var password string
+
+			fmt.Print("password: ")
+			fmt.Scan(&password)
+
+			if password == passwordBenar {
+				fmt.Println("Login berhasil")
+				break
+			}
+		}
+
+		// Tambahkan 1 ke jumlah login gagal
+		gagalLogin++
+	}
+
+	fmt.Printf("Jumlah login gagal: %d\n", gagalLogin)
 }

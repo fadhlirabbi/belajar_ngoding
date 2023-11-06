@@ -11,7 +11,7 @@ func no5() {
 	fmt.Print("\nMasukkan bilangan bulat positif N: ")
 	fmt.Scan(&x)
 
-	fmt.Println("Keluaran:\n")
+	fmt.Println("Keluaran:")
 	for i := 1; i <= x; i++ {
 		if x%i == 0 {
 			fmt.Printf("%d true\n", i)
