@@ -21,7 +21,6 @@ func no2() {
 
 		luas := sisi * sisi
 		keliling := 4 * sisi
-
 		hasil[i] = [2]int{luas, keliling}
 		// 2
 		// 0,1 index array mulai dari 0 --> 0 dan 1

@@ -7,8 +7,8 @@ using namespace std;
 
 /* multi 
 line 
-comment*/
-
+comment*/ 
+    
 main(){
 int x, y;
 //iostream input/output

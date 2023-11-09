@@ -32,5 +32,5 @@ main(){
     localvar = foo2();
     cout<<localvar;
 
-    std::getchar();
+    cin.get();
 }
