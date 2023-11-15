@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+
 	var T, V int
 	fmt.Print("Masukkan kapasitas tanki (T): ")
 	fmt.Scan(&T)
