@@ -1,35 +1,32 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
 class Buku {
 private:
-    std::string judul;
-    std::string penulis;
+    string judul;
+    string penulis;
     
 public:
-    Buku(std::string j, std::string p) : judul(j), penulis(p) {}
+    Buku(string j, string p) : judul(j), penulis(p) {}
 
     void tampilkanInfo() {
-        std::cout << "Judul Buku: " << judul << "\nPenulis: " << penulis << std::endl;
+        cout << "Judul Buku: " << judul << "\nPenulis: " << penulis << endl;
     }
 };
-
-
 
 class Ebook : public Buku {
 private:
     double ukuranFile; // dalam MB
 
 public:
-    Ebook(std::string j, std::string p, double ukuran) : Buku(j, p), ukuranFile(ukuran) {}
+    Ebook(string j, string p, double ukuran) : Buku(j, p), ukuranFile(ukuran) {}
 
     void tampilkanInfo() {
         Buku::tampilkanInfo();
-        std::cout << "Ukuran File: " << ukuranFile << " MB" << std::endl;
+        cout << "Ukuran File: " << ukuranFile << " MB" << endl;
     }
 };
-
-
 
 void cetakInfoBuku(Buku &buku) {
     buku.tampilkanInfo();
@@ -43,5 +40,6 @@ int main() {
     cetakInfoBuku(buku1);
     cetakInfoBuku(ebook1);  // Polimorfisme di sini!
 
+    getchar();
     return 0;
 }

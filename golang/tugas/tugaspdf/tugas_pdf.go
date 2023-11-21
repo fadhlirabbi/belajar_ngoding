@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"strconv"
 )
 
 func angka_genap(p int8) bool {
@@ -167,15 +168,20 @@ func main() {
 
 	fmt.Println("\nNo 9, MENGGANDAKAN 2 DIGIT ANGKA")
 
-	var a, b int64
+	var a int64
 
-	fmt.Print("\nmasukkan digit 1 : ")
+	fmt.Print("\nmasukkan digit : ")
 	fmt.Scan(&a)
 
-	fmt.Print("masukkan digit 2 : ")
-	fmt.Scan(&b)
+	// Mengonversi angka menjadi string
+	strA := strconv.FormatInt(a, 10)
 
-	fmt.Println("\nhasil duplikasinya adalah = ", a, a, b, b)
+	// Menggandakan digit dengan menggunakan slice
+	result := strA[:1] + strA[:1] + strA[1:] + strA[1:]
+
+	fmt.Println("\nhasil duplikasinya adalah = ", result)
+
+	fmt.Println("\n===========================================")
 
 	fmt.Println("\n===========================================")
 
@@ -201,8 +207,8 @@ func main() {
 
 	var konversi_berat = brt / 1000
 
-	var acc_volume bool = volume_paket_m <= 1.0
-	var acc_berat bool = konversi_berat <= 30.0
+	var acc_volume bool = volume_paket_m <= 2.0
+	var acc_berat bool = konversi_berat <= 2.0
 
 	var acc_total = acc_berat && acc_volume
 

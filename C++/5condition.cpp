@@ -9,6 +9,7 @@ main(){
     cin >>x;
 
     //if else statement
+    
     if(x>0 && x<5){
         cout<<"x lebih besar dari 0 dan kurang dari lima"<<endl;
     }
@@ -19,7 +20,6 @@ main(){
     else{
         cout<<"x diluar 1-9"<<endl;
     }
-
 
     //?: operator
     (x%2==0)?cout<<"genap"<<endl:cout<<"ganjil"<<endl;
